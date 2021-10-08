@@ -1,5 +1,5 @@
 # scala-common
-This is a common library used by Linked Ideal LLC. in Scala projects.
+This is a common library used by [Linked Ideal LLC.](https://linked-ideal.com/) in Scala projects.
 
 [![Header Check Action](https://github.com/toposoid/scala-common/actions/workflows/action.yml/badge.svg)](https://github.com/toposoid/scala-common/actions/workflows/action.yml)
 ## Requirements
