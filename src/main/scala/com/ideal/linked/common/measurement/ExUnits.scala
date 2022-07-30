@@ -21,7 +21,7 @@ import tech.units.indriya.unit.{BaseUnit, TransformedUnit, Units}
 
 import javax.measure.{MetricPrefix, Quantity, Unit}
 import javax.measure.quantity.{Area, Length, MagneticFluxDensity, Mass, Temperature, Volume}
-
+import java.util.Locale
 /*
 Extended definition of unit representation using Units of Measurement API
 ref. JSR 363
@@ -62,6 +62,16 @@ object ExUnits {
   trait Information extends Quantity[Information] {}
   final val BIT: Unit[Information]= new BaseUnit[Information]("ｂ", "BIT")
   final val BYTE: Unit[Information] =  new TransformedUnit[Information]("Ｂ", "BYTE", BIT , MultiplyConverter.of(8))
+
+  trait Currency extends Quantity[Currency] {}
+  final val YEN: Unit[Currency]= new BaseUnit[Currency](getCurrencySymbol(Locale.JAPAN), "YEN")
+  final val DOLLER: Unit[Currency]= new BaseUnit[Currency](getCurrencySymbol(Locale.US), "DOLLAR")
+  final val EURO: Unit[Currency]= new BaseUnit[Currency](getCurrencySymbol(Locale.FRANCE), "EURO")
+
+  def getCurrencySymbol(locale:java.util.Locale):String ={
+    val currency = java.util.Currency.getInstance(locale)
+    currency.getSymbol(locale)
+  }
 
   def pow(n:Long,m:Int):Long =
     if(m<=0) 1
