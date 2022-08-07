@@ -49,6 +49,7 @@ object ExUnits {
   final val HEIBEI: Unit[Area] = new TransformedUnit[Area]("ｍ\u00B2", "HEIBEI", Units.SQUARE_METRE , MultiplyConverter.ofRational(1, 1))
   final val TSUBO: Unit[Area] = new TransformedUnit[Area]("坪", "TSUBO", Units.SQUARE_METRE, MultiplyConverter.of(1.0/0.3025))
 
+  final val CUBIC_METRE: Unit[Volume] = new TransformedUnit[Volume]("\u33A5", "CUBIC_METRE", Units.CUBIC_METRE , MultiplyConverter.of(1))
   final val GALLON: Unit[Volume] = new TransformedUnit[Volume]("ｇａｌ", "GALLON", Units.LITRE , MultiplyConverter.of(3.785412))
   final val QUART: Unit[Volume] = new TransformedUnit[Volume]("ｑｔ", "QUART", GALLON , MultiplyConverter.of(0.25))
   final val PINT: Unit[Volume] = new TransformedUnit[Volume]("ｐｔ", "PINT", GALLON , MultiplyConverter.of(0.5))
