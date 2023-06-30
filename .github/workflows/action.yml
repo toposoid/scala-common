@@ -9,7 +9,7 @@ env:
   PJ_ACTOR: toposoid
   PJ_REPO: scala-common
   PJ_BRANCH: feature
-  PJ_VERSION: 0.4
+  PJ_VERSION: 0.5-SNAPSHOT
 jobs:
   header-check_scala-common:
     runs-on: ubuntu-20.04

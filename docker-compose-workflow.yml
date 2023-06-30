@@ -1,5 +1,5 @@
 version: '3'
 services:
   scala-common:
-    image: scala-common:0.4
+    image: scala-common:0.5-SNAPSHOT
     tty: true
