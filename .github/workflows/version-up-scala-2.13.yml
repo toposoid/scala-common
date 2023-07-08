@@ -1,15 +1,13 @@
 name: Header Check Action
 on:
-  pull_request:
-    types:
-      - closed
+  push:
     branches:
-      - main
+      - version-up-scala-2.13
   workflow_dispatch:
 env:
   PJ_ACTOR: toposoid
   PJ_REPO: scala-common
-  PJ_BRANCH: main
+  PJ_BRANCH: version-up-scala-2.13
   PJ_VERSION: 0.5-SNAPSHOT
 jobs:
   header-check_scala-common:
