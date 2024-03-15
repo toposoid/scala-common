@@ -2,7 +2,7 @@ import Dependencies._
 import sbt.Keys.libraryDependencies
 
 ThisBuild / scalaVersion     := "2.13.11"
-ThisBuild / version          := "0.5"
+ThisBuild / version          := "0.6-SNAPSHOT"
 ThisBuild / organization     := "com.ideal.linked"
 ThisBuild / organizationName := "common"
 
