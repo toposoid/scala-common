@@ -27,7 +27,7 @@ object DeploymentConverter extends LazyLogging{
 
   private val config: Config = ConfigFactory.load()
   private val deployment:String = config.getString("deployment")
-  logger.info("Deployed Environment:" + deployment + "\t-\t[TOPOSOID-APP]")
+  logger.info("Deployed Environment:" + deployment + "\t-")
   val conf: Config = config.getConfig(deployment)
 
 }
