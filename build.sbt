@@ -3,7 +3,7 @@ import sbt.Keys.libraryDependencies
 import de.heikoseeberger.sbtheader.License
 
 ThisBuild / scalaVersion     := "2.13.11"
-ThisBuild / version          := "0.6-SNAPSHOT"
+ThisBuild / version          := "0.6"
 ThisBuild / organization     := "com.ideal.linked"
 ThisBuild / organizationName := "common"
 
