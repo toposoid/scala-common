@@ -3,7 +3,7 @@ This is a common library used by [Linked Ideal LLC.](https://linked-ideal.com/) 
 
 [![Header Check Action](https://github.com/toposoid/scala-common/actions/workflows/action.yml/badge.svg)](https://github.com/toposoid/scala-common/actions/workflows/action.yml)
 ## Requirements
-Scala version 2.13.x,   
+Scala version 3.3.6,   
 Sbt version 1.9.0
 
 ## Setup
