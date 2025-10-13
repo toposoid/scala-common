@@ -11,7 +11,7 @@ env:
   PJ_VERSION: 0.7-SNAPSHOT
 jobs:
   header-check_scala-common:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     steps:
       - name: Clone ${{ env.PJ_REPO }}
         uses: actions/checkout@v3
@@ -48,6 +48,7 @@ jobs:
           tags: toposoid/toposoid-scala-lib-base:${{ env.PJ_VERSION }}
           build-args: |
             TARGET_BRANCH=${{ env.PJ_BRANCH }}
+            AKKA_TOKEN=${{secrets.AKKA_TOKEN}}
       - name: Build And Push Docker Image
         uses: docker/build-push-action@v3
         with:
